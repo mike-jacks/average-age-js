@@ -1,3 +1,4 @@
+// Super Heroes object
 const superHeroes = {
   Tony: 42,
   Peter: 18,
@@ -6,9 +7,10 @@ const superHeroes = {
   Thor: 1055,
 };
 
-const calcAvgBtn = document.getElementById("calc-avg-age-btn");
-calcAvgBtn.addEventListener("click", () => calculateAverageAge(superHeroes));
+// Event Listener for button
+document.getElementById("calc-avg-age-btn").addEventListener("click", () => calculateAverageAge(superHeroes));
 
+// function called by event listener
 function calculateAverageAge(superHeroes) {
   const superHeroesAsArray = Object.entries(superHeroes);
   const sum = superHeroesAsArray.reduce((sum, value) => {
