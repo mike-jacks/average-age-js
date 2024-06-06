@@ -20,4 +20,5 @@ function calculateAverageAge(superHeroes) {
   const avgAge = sum / superHeroesAsArray.length;
   console.log(avgAge);
   document.getElementById("output").textContent = `Average age of superHeroes is: ${avgAge}`;
+  return avgAge;
 }
